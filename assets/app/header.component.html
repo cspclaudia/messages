@@ -1,0 +1,11 @@
+<header class="row">
+    <nav *ngIf="!mostrarMenu" class="col-md-8 col-md-offset-2">
+        <ul class="nav nav-pills">
+            <!--(li>a)*2-->
+            <li routerLinkActive="active">
+                <a [routerLink]="['/messages']">Messages</a></li>
+            <li routerLinkActive="active">
+                <a [routerLink]="['/authentication']">Authentication</a></li>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,31 @@
+<article class="panel panel-default" [ngStyle]="{backgroundColor: color, 'font-size.px': tam}"
+                                     (click)="color = 'yellow'"
+                                     (dblclick) = "onMudaStyle()"
+                                     (mouseenter)="color = 'green'"
+                                     (mouseleave)="color = 'blue'">
+    <div class="panel-body">
+        {{ messageVarClasse.content }}
+<!--         {{ messageVarClasseAlias.content }} -->
+<!--         {{ message.content }} -->
+    </div>
+    <footer class="panel-footer">
+        <div class="author">
+            {{ messageVarClasse.user }}
+<!--             {{ messageVarClasseAlias.username }} -->
+<!--             {{ message.author }} -->
+        </div>
+        <div class="config">
+            <a (click)="onEditService()">Edit</a>
+            <a (click)="onDeleteService()">Delete</a>
+        </div>
+    </footer>
+</article>
+
+<!-- <div class="col-md-8 col-md-offset-2">
+    <div class="form-group">
+        <label for="myContent">Conteúdo</label>
+        <input type="text" id="myContent" class="form-control" #refLocalInputMyContent>
+    </div>
+    <button type="submit" class="btn btn primary"
+        (click)="onSave(refLocalInputMyContet.value">Save minha mensagem - ref</button>
+</div> -->

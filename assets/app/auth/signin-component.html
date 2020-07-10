@@ -1,0 +1,18 @@
+<h1>SIGN IN</h1>
+<div class="col-md-8 col-md-affset-2">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(refLocalForm)" #refLocalForm="ngForm" ngNativeValidate>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control" formControlName="emailTS">
+        </div>
+        <div class="form-group">
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" class="form-control" formControlName="passwordTS">
+        </div>
+        <div class="form-check">
+            <input type="checkbox" ng-model="checkboxModel" (change)="ckeckValue()">
+            <label for="exampleCheck" class="form-check-label">Keep me signed in</label>
+        </div><br>
+        <button class="btn btn-primary" type="submit" [disabled]="!myForm.valid">Sing In</button>
+    </form>
+</div>

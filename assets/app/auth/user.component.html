@@ -1,0 +1,13 @@
+<article class="panel panel-default" [ngStyle]="{backgroundColor: color, 'font-size.px': tam}"
+                                     (click)="color = 'yellow'"
+                                     (dblclick) = "onMudaStyle()"
+                                     (mouseenter)="color = 'green'"
+                                     (mouseleave)="color = 'blue'">
+    <div class="panel-body">
+        {{ userVarClasse.firstName }}
+        {{ userVarClasse.lastName }}
+        {{ userVarClasse.email }}
+        {{ userVarClasse.senha }}
+    </div>
+
+</article>
